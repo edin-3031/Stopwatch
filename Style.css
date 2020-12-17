@@ -1,0 +1,99 @@
+#play,#pause,#stop,#reset{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+#play:after, #pause:after, #stop:after, #reset:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 10%;
+    display: block;
+    margin-top: 0px;
+    right: 0;
+    background: rgb(0, 60, 255);
+    transition: width .3s ease;
+    -webkit-transition: width .3s ease;
+}
+
+#play:hover:after, #pause:hover:after, #stop:hover:after, #reset:hover:after{
+    width: 100%;
+    left: 0;
+    background: #000;
+}
+
+#glavni{
+    height: 100%; 
+    width: 100%;
+    /* border: 1px solid black;  */
+    position: relative; 
+    font-size: 6vw; 
+    margin-top:2.5vw;
+    font-family: "Agency FB";
+    font-weight: bold;
+}
+#kutija{
+    margin: auto; 
+    height: 30%; 
+    width: 60%;  
+    /* border-left: 1px solid red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red; */
+    background-color: rgb(150, 150, 150);
+}
+#kutija::after{
+    position:absolute;
+    content:"";
+    width:10.08%;
+    height:30%;
+    right:9.95%;
+    transform:skewY(45deg);
+    top:11%;
+    /* border-top:1px solid rgb(255, 0, 0);
+    border-right:1px solid rgb(255, 0, 0); */
+    box-sizing:border-box;
+    background-color: rgb(150, 150, 150);
+}
+#kutija::before{
+    position:absolute;
+    content:"";
+    width:30%;
+    height:60%;
+    right:9.95%;
+    bottom:15.8%;
+    /* border-bottom:1px solid rgb(255, 0, 0);
+    border-right:1px solid rgb(255, 0, 0);     */
+    box-sizing:border-box;
+    background-color: rgb(150, 150, 150);
+}
+#sati,#minuti,#sekundi,#dvotacka{
+    color:rgba(255, 255, 255, 0.7);
+    text-shadow: 10px 10px 15px blue;
+}
+#sati,#minuti,#sekundi{
+    position: relative; 
+    /* border: 1px solid blue;  */
+    display: inline-block; 
+    left:9%;
+    font-size: 15vw;
+}
+#dvotacka{
+    position: relative;
+    display: inline-block;
+    left:10%;
+    font-size: 12vw;
+    /* border: 1px solid blue; */
+}
+#dugmad{
+    /* border: 1px solid green;  */
+    position: relative; 
+    height: 20%; 
+    width: 80%; 
+    margin: auto;
+}
+#play,#pause,#stop,#reset{
+    /* border:1px solid purple;  */
+    display: inline-block; 
+    position: relative; 
+    left:6.5%;
+    margin-left: 10%;
+}
