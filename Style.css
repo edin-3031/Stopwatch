@@ -3,7 +3,7 @@
     color: black;
     background-color: white;
 }
-#play:after, #pause:after, #stop:after, #reset:after{
+#play:after, #pause:after, #stop:after, #reset:after, #lap_button:after{
     content: '';
     position: absolute;
     width: 0; height: 10%;
@@ -15,7 +15,7 @@
     -webkit-transition: width .3s ease;
 }
 
-#play:hover:after, #pause:hover:after, #stop:hover:after, #reset:hover:after{
+#play:hover:after, #pause:hover:after, #stop:hover:after, #reset:hover:after, #lap_button:hover:after{
     width: 100%;
     left: 0;
     background: #000;
@@ -96,4 +96,32 @@
     position: relative; 
     left:6.5%;
     margin-left: 10%;
+}
+#kutija_za_lap{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    /* background-color: red; */
+    top:0%;
+
+}
+#lap{
+    position: relative;
+    /* background-color: green; */
+    height: 84.2%;
+    width: 100%;
+    font-size: 4vw;
+    /* border: 1px solid black; */
+    overflow:scroll;
+    text-align: center;
+    background-color: gainsboro;
+}
+#lap_button{
+    position: relative;
+    /* background-color: blue; */
+    height: 15.8%;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
 }
